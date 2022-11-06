@@ -1,6 +1,5 @@
 import sys
 
-
 def insert(value):
     return L.append(value)
 
