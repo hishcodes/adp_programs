@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <script>
+        function add(){
+            var v1 = parseInt(document.getElementById('op1').value);
+            var v2 = parseInt(document.getElementById('op2').value);
+            var sum = v1 + v2;
+            document.getElementById('res').innerHTML = sum;
+        }
+
+        function sub(){
+            var v1 = parseInt(document.getElementById('op1').value);
+            var v2 = parseInt(document.getElementById('op2').value);
+            var sub = v1 - v2;
+            document.getElementById('res').innerHTML = sub;
+        }
+
+        function divide(){
+            var v1 = parseInt(document.getElementById('op1').value);
+            var v2 = parseInt(document.getElementById('op2').value);
+            var quotient = v1 / v2;
+            document.getElementById('res').innerHTML = quotient;
+        }
+
+        function multi(){
+            var v1 = parseInt(document.getElementById('op1').value);
+            var v2 = parseInt(document.getElementById('op2').value);
+            var product = v1 * v2;
+            document.getElementById('res').innerHTML = product;
+        }
+    </script>
+    <body>
+        Operand 1: <input type="op1" name="op1" id="op1"/>
+        <br><br>
+        Operand 2: <input type="op2" name="op2" id="op2"/>
+        <br><br>
+        <input type="button" value="+" onclick="add()"/>
+        <input type="button" value="-" onclick="sub()"/>
+        <input type="button" value="/" onclick="divide()"/>
+        <input type="button" value="*" onclick="multi()"/>
+        <br><br>
+        Result:
+        <div id="res">
+            0
+        </div>
+    </body>
+</html>
